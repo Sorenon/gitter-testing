@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: sorenon/glitter-action@releases/v0.1
+        uses: Sorenon/gitter-action@v0
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
