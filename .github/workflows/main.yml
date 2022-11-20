@@ -7,7 +7,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-        uses: Sorenon/gitter-action@main
-          - uses: ./
+      - uses: Sorenon/gitter-action@main
         with:
           myToken: ${{ secrets.GITHUB_TOKEN }}
