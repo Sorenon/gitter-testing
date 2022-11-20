@@ -1,12 +1,13 @@
-on: [push]
+on:
+  pull_request_target:
+    types:
+      - opened
 
 jobs:
-  hello_world_job:
+  test:
     runs-on: ubuntu-latest
-    name: A job to say hello
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: Sorenon/gitter-action@v0
+        uses: Sorenon/gitter-action@main
+          - uses: ./
         with:
-          milliseconds: 1000
+          myToken: ${{ secrets.GITHUB_TOKEN }}
