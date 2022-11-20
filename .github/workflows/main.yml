@@ -12,3 +12,4 @@ jobs:
       - uses: Sorenon/gitter-action@main
         with:
           myToken: ${{ secrets.GITHUB_TOKEN }}
+          users: [ 5092859230, 375483453, 735827592352, 73825972385, 3523542342, 234234235 ]
